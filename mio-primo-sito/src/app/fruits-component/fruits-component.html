@@ -1,1 +1,8 @@
-<p>fruits-component works!</p>
+<div class="row m-2">
+  @for (fruit of fruits; track fruit.name) {
+    <div class="col border text-center">
+      <div>{{ fruit.emoji }}</div>
+      <div class="text-info">{{ fruit.name }}</div>
+    </div>
+  }
+</div>
